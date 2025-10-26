@@ -45,7 +45,7 @@ module.exports = grammar({
 
     comment_line: $ => seq("#", /[^\n]*/),
     comment_block: $ => seq("##",
-      token.immediate(repeat(choice(/[^#]/, /#[^#]/))), // thanks mr ai...
+      token.immediate(repeat(choice(/[^#]/, /#[^#]/))),
       token.immediate("##")),
 
     letter: $ => token.immediate(/[A-z]/),
