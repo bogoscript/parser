@@ -9,7 +9,8 @@
       "file-types": [
         "bs",
         "bogo",
-        "bogoscript"
+        "bogoscript",
+        "bogos"
       ],
       "injection-regex": "^bogoscript$",
       "class-name": "TreeSitterBogoscript"
