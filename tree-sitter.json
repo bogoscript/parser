@@ -1,0 +1,42 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "bogoscript",
+      "camelcase": "BogoScript",
+      "title": "bogoscript",
+      "scope": "source.bogoscript",
+      "file-types": [
+        "bs",
+        "bogo",
+        "bogoscript"
+      ],
+      "injection-regex": "^bogoscript$",
+      "class-name": "TreeSitterBogoscript"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "bogoscript isn't the scratch transpiler",
+    "authors": [
+      {
+        "name": "faretek",
+        "email": "r@faretek.dev",
+        "url": "https://faretek.dev/"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/bogoscript/parser"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
