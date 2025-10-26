@@ -43,10 +43,10 @@ module.exports = grammar({
         seq("u", $.hexdigit, $.hexdigit, $.hexdigit, $.hexdigit)))
     ),
 
-    comment_line: $ => seq("//", /[^\n]*/),
-    comment_block: $ => seq("/*",
-      token.immediate(repeat(choice(/[^*]/, /\*[^/]/))), // thanks mr ai...
-      token.immediate("*/")),
+    comment_line: $ => seq("#", /[^\n]*/),
+    comment_block: $ => seq("##",
+      token.immediate(repeat(choice(/[^#]/, /#[^#]/))), // thanks mr ai...
+      token.immediate("##")),
 
     letter: $ => token.immediate(/[A-z]/),
     hexdigit: $ => token.immediate(/[0-9a-fA-F]/),
