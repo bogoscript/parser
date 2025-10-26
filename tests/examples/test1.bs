@@ -1,0 +1,12 @@
+print_str 12;
+print_str "abddef";
+print_str "abdefGHI";
+print_str "abd\\\"efGHI";
+print_str "\uAA23";
+print_str "\\123129321 312809asijdau su9(OIJisadj j";// asdasdasd
+print_str 13; /*
+
+asdasdasd
+*/print_str 12;
+// 12;
+/* aa */
